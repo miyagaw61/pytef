@@ -16,12 +16,12 @@ python setup.py install
 1. create config file
 2. pytef [config file]
 
-* How to create config file
+### How to create config file
 
-先頭が"from"または"import":宣言を記述
-一文字めが"\*":普通に記述
-一文字めが"!":テストする関数名
-それ以外:カンマ区切りで引数を書き、セミコロンで区切った後に望みの答え(返却値)を記述
+* 先頭が"from"または"import":宣言を記述
+* 一文字めが"\*":普通に記述
+* 一文字めが"!":テストする関数名
+* それ以外:カンマ区切りで引数を書き、セミコロンで区切った後に望みの答え(返却値)を記述
 
 ## Usage Example
 
