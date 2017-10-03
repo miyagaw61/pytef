@@ -74,7 +74,7 @@ pytef_out.py F
  
     def test_add_func():
         assert add_func(1,2) == 3
-\>       assert add_func(2,3) == 6
+>       assert add_func(2,3) == 6
 E       assert 5 == 6
 E        +  where 5 = add_func(2, 3)
  
