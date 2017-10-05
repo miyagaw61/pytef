@@ -41,8 +41,12 @@ Usage: pytef [input_file]
         elif lines[i][0] == '*':
             code += lines[i][1:] + '\n'
         else:
-            arg = regex_arg.findall(lines[i])[0]
-            res = regex_res.findall(lines[i])[0]
+            if ";" in lines[i]:
+                arg = regex_arg.findall(lines[i])[0]
+                res = regex_res.findall(lines[i])[0]
+            else:
+                arg = lines[i]
+                res = "None"
             code += " "*4 + "assert " + func_name + "(" + arg + ") == " + res + '\n'
     Fl("pytef_out.py").write(code)
     Fl("/tmp/.pytef.py").write(code)
