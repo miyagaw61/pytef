@@ -1,4 +1,5 @@
 from enert import *
+from enert.argparse import *
 import re, sys
 import better_exceptions
 
