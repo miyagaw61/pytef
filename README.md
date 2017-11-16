@@ -45,9 +45,9 @@ if __name__ == '__main__':
 > vim pytef.conf
 
 ```
-from .add import *
+from add import *
 import sys
-\*strings = "AAA"
+*strings = "AAA"
 !add_func
 1,2;3
 2,3;6
